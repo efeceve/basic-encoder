@@ -31,36 +31,63 @@
     color: #721c24;
     border-color: #f5c6cb;
     font-weight: 600;
-  }
+}
   
-  /* Otras opciones de colores de alerta */
-  .custom-alert.info {
-    background-color: #cce5ff;
-    color: #004085;
-    border-color: #b8daff;
-  }
-  
-  .custom-alert.success {
-    background-color: #d4edda;
-    color: #155724;
-    border-color: #c3e6cb;
-  }
-  
-  .custom-alert.warning {
-    background-color: #fff3cd;
-    color: #856404;
-    border-color: #ffeeba;
-  }
+/* Otras opciones de colores de alerta */
+.custom-alert.info {
+  background-color: #cce5ff;
+  color: #004085;
+  border-color: #b8daff;
+}
 
-  @keyframes text-animation {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
+.custom-alert.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.custom-alert.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border-color: #ffeeba;
+}
+
+@keyframes text-animation {
+  0%, 100% {
+    transform: scale(1);
   }
-  
-  .text-animated {
-    animation: text-animation 0.5s;
+  50% {
+    transform: scale(1.2);
   }
+}
+
+.text-animated {
+  animation: text-animation 0.5s;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}

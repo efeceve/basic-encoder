@@ -48,7 +48,7 @@ document.getElementById("convertButton").addEventListener("click", () => {
   const divAlertError = document.getElementById("alertErrorDecoded");
   if (text === null || text === "") {
       divAlertError.style.display = "block";
-      document.getElementById("errorDecodedResult").textContent = "Error al convertir base64 a texto.";
+      document.getElementById("errorDecodedResult").textContent = "Error converting the text";
       setTimeout(() => {
           divAlertError.style.display = "none";
       }, 3000);
@@ -65,7 +65,7 @@ document.getElementById("encodeButton").addEventListener("click", () => {
   const divAlertError = document.getElementById("alertErrorEncoded");
   if (base64 === null || base64 === "") {
       divAlertError.style.display = "block";
-      document.getElementById("errorEncodedResult").textContent = "Error al convertir el texto a base64.";
+      document.getElementById("errorEncodedResult").textContent = "Error converting the text";
       setTimeout(() => {
           divAlertError.style.display = "none";
       }, 3000);
